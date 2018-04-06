@@ -41,10 +41,11 @@ var Counter = React.createClass({
     console.log("Aktualizacja po wprowadzeniu zmian");
   },
 
-  ShouldComponentUpdate: function() {
+  shouldComponentUpdate: function() {
     console.log(
       "Wyjście z aktualizacji jeśli nie ma potrzeby dalszego renderowania"
     );
+    return true;
   },
 
   componentWillUpdate: function() {
